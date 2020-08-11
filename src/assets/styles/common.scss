@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.flexh {
+  display: flex;
+}
+
+.flexv {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex0 {
+  flex: none;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-hcenter {
+  align-items: center;
+}
+
+.red {
+  color: red;
+}
+
+.PL16 {
+  padding-left: 16px;
+}
+
+.MT16 {
+  margin-top: 16px;
+  position: relative;
+}

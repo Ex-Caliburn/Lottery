@@ -4,9 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "start": "vue-cli-service serve",
+    "beta": "vue-cli-service serve --mode development",
+    "build": "vue-cli-service build ",
+    "test:unit": "vue-cli-service test:unit --mode development",
+    "lint": "vue-cli-service lint",
+    "analyze": "npm_config_report=true vue-cli-service build --mode analyze",
+    "stylelint": "stylelint src/**/*.{vue,html,css,scss} --syntax --cache --cache-location 'src/.stylelintcache' --fix"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -32,6 +36,7 @@
     "@vue/eslint-config-typescript": "^5.0.2",
     "@vue/test-utils": "^1.0.3",
     "chai": "^4.1.2",
+    "compression-webpack-plugin": "^4.0.0",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-vue": "^6.2.2",
@@ -39,8 +44,16 @@
     "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
+    "stylelint": "^13.6.1",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.17.2",
+    "stylelint-webpack-plugin": "^2.1.0",
     "typescript": "~3.9.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "webpack-bundle-analyzer": "^3.8.0"
   },
   "eslintConfig": {
     "root": true,
@@ -80,8 +93,10 @@
   },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
-      "vue-cli-service lint",
-      "git add"
+      "vue-cli-service lint"
+    ],
+    "*.{scss,vue,html,css}": [
+      "stylelint src/**/*.{vue,html,css,scss} --syntax --fix"
     ]
   }
 }

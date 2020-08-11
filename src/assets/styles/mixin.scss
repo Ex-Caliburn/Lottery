@@ -1,0 +1,41 @@
+@mixin fullPage {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+//定位上下左右居中
+@mixin center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//定位上下居中 vertical-center
+@mixin vc($left: 0) {
+  position: absolute;
+  top: 50%;
+  transform: translate($left, -50%);
+}
+
+//定位左右居中 horizontal-center
+@mixin hc($top: 0) {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, $top);
+}
+
+//省略号
+@mixin ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//背景透明
+@mixin bg_color_opacity($color, $alpha) {
+  background-color: rgba($color: $color, $alpha: $alpha);
+}

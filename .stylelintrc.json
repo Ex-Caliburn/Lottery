@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier",
+    "stylelint-config-sass-guidelines"
+  ],
+  "plugins": ["stylelint-scss", "stylelint-order"],
+  "rules": {
+    "color-named": null,
+    "max-nesting-depth": null,
+    "selector-max-id": null,
+    "selector-class-pattern": "^[a-zA-Z0-9-_]+",
+    "scss/dollar-variable-pattern": "^[a-z]+([a-z0-9-]+[a-z0-9]+)?$|^[a-zA-Z0-9-]+",
+    "scss/at-mixin-pattern": null
+  }
+}

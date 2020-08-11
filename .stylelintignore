@@ -1,0 +1,12 @@
+ /dist/
+ 
+*.js
+*.ts
+*.png
+*.jpg
+*.webp
+*.ttf
+*.woff
+*.json
+*.md
+*.txt

@@ -1,0 +1,33 @@
+// 设计规范颜色
+$jdk-main-color: #3d7dfd;
+$jdk-success-color: #09d78e;
+$jdk-warning-color: #ffb01a;
+$jdk-danger-color: #ff5874;
+
+// 线条边框色和背景色
+$jdk-line-color: #e4e8f0;
+$jdk-background-color: #f8f9fa;
+
+// 文本颜色
+$jdk-primary-text-color: #354369;
+$jdk-regular-text-color: #aeb6c4;
+$jdk-secondary-text-color: #e4e8f0;
+$jdk-placeholder-text-color: #e4e8f0;
+
+/*
+ * 改变element ui 主题色变量 参考 https://github.com/ElementUI/theme-chalk/blob/master/src/common/var.scss
+ */
+$--color-primary: $jdk-main-color;
+$--color-success: $jdk-success-color;
+$--color-warning: $jdk-warning-color;
+$--color-danger: $jdk-danger-color;
+$--color-info: #aeb6c4;
+$--color-text-regular: $jdk-primary-text-color;
+$--color-text-primary: #2f3a58;
+$--color-text-secondary: $jdk-regular-text-color;
+$--color-text-placeholder: $jdk-regular-text-color;
+$--border-color-base: $jdk-secondary-text-color;
+$--border-color-light: #eff1f7;
+$--border-color-lighter: #eff1f7;
+$--border-color-extra-light: #eff1f7;
+$--background-color-base: #f8f9fa;

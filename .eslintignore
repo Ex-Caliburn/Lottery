@@ -1,0 +1,4 @@
+dist
+@types
+# tests
+vue.config.js
