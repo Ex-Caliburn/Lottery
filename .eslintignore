@@ -1,4 +1,5 @@
 dist
+root
 @types
 # tests
 vue.config.js

@@ -8,6 +8,7 @@ const isProduction = process.env.NODE_ENV !== 'development'
 
 module.exports = {
   lintOnSave: 'warning',
+  outputDir: 'root',
   css: {
     loaderOptions: {
       scss: {
