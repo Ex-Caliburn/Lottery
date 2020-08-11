@@ -1,5 +1,6 @@
  /dist/
  /root
+ /docs
  
 *.js
 *.ts
